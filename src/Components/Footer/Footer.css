@@ -61,4 +61,11 @@ footer a {
     .footer__socials {
         margin-bottom: 2.6rem;
     }
+    .footerLast{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(auto);
+    }
 }
+
+/*popup css*/

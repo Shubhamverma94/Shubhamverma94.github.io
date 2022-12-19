@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { BsLinkedin } from "react-icons/bs";
-import { FaGithub } from "react-icons/fa";
+import { FaCopyright, FaGithub, FaHeart } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { ImHome } from "react-icons/im";
@@ -22,58 +22,109 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer>
-      <a href="#home" className="footer__logo">
-        <Name />
-      </a>
-      <ul className="permalinks">
-        <li>
-          <a href="#home">Home</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#experience">Skills</a>
-        </li>
-        <li>
-          <a href="#portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-      <Container>
-        <HStack
+    <>
+      <br/>
+      <br/>
+      <Text
+        borderRadius={"20px"}
+        as="b"
+        fontSize={{ base: "18px", md: "24px", lg: "36px" }}
+        style={{ textShadow: "#FC0 1px 0 10px" }}
+        className="section__title_different"
+      >
+        ##Contact
+      </Text>
+      <h2>Contact</h2>
+      <footer>
+        <a href="#home" className="footer__logo">
+          <Name />
+        </a>
+        <ul className="permalinks">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#experience">Skills</a>
+          </li>
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <Center className="footerLast">
+          {/* <HStack
           divider={<StackDivider borderColor="gray.200" />}
           spacing={14}
           align="stretch"
-        >
-          <Box>
-            <Box>
+        > */}
+          <Box className="footer__socials">
+            <Box
+              border={"0px solid red"}
+              display={"flex"}
+              flexDirection={"column"}
+              alignContent={"center"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
               <a
-                href="imkannu.shubham@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=imkannu.shubham@gmail.com&cc=imkannu.shubham@gmail.com&bcc=imkannu.shubham@gmail.com&su=Noticed Your Work. Let's connect.&body=Hey Shubham! Drop your Resume."
                 target="_blank"
                 rel="noreferrer"
               >
                 <SiGmail size={40} />
               </a>
-              <Badge borderRadius='full' px='4' colorScheme='purple'><b>GMAIL</b></Badge>
+              <Badge borderRadius="full" px="4" colorScheme="purple">
+                <b>GMAIL</b>
+              </Badge>
+              <Center>
+                <a
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=imkannu.shubham@gmail.com&cc=imkannu.shubham@gmail.com&bcc=imkannu.shubham@gmail.com&su=Noticed Your Work. Let's connect.&body=Hey Shubham! Drop your Resume."
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <b>imkannu.shubham@gmail.com</b>
+                </a>
+              </Center>
             </Box>
-            <Box>
-              <a
-                href="imkannu.shubham@gmail.com"
-                target="_blank"
-                rel="noreferrer"
-              >
+            <Box
+              border={"0px solid red"}
+              display={"flex"}
+              flexDirection={"column"}
+              alignContent={"center"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
+              <a href="tel:9074967678" target="_blank" rel="noreferrer">
                 <BsFillTelephoneFill size={40} />
               </a>
-             <Badge borderRadius='full' px='4' colorScheme='purple'> <b>TELEPHONE</b></Badge>
+              <Badge borderRadius="full" px="4" colorScheme="purple">
+                {" "}
+                <b>TELEPHONE</b>
+              </Badge>
+              <Center>
+                <a href="tel:9074967678" target="_blank" rel="noreferrer">
+                  <b>+91-9074967678</b>
+                </a>
+              </Center>
             </Box>
-          </Box>
+            {/* </Box> */}
 
-          <VStack className="footer__socials">
-            <Box>
+            {/* <VStack className="footer__socials"> */}
+            {/* <Box className="footer__socials"> */}
+            <Box
+              border={"0px solid red"}
+              display={"flex"}
+              flexDirection={"column"}
+              alignContent={"center"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
               <a
                 href="https://github.com/Shubhamverma94"
                 target="_blank"
@@ -82,9 +133,28 @@ const Footer = () => {
                 <FaGithub size={40} />
               </a>
 
-              <Badge borderRadius='full' px='4' colorScheme='purple'><b>GITHUB</b></Badge>
+              <Badge borderRadius="full" px="4" colorScheme="purple">
+                <b>GITHUB</b>
+              </Badge>
+              <b>
+                {" "}
+                <a
+                  href="https://github.com/Shubhamverma94"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  /Shubhamverma94
+                </a>
+              </b>
             </Box>
-            <Box>
+            <Box
+              border={"0px solid red"}
+              display={"flex"}
+              flexDirection={"column"}
+              alignContent={"center"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
               <a
                 href="https://www.linkedin.com/in/shubhamverma17/"
                 target="_blank"
@@ -92,10 +162,28 @@ const Footer = () => {
               >
                 <BsLinkedin size={40} />
               </a>
-              <Badge borderRadius='full' px='4' colorScheme='purple'><b>LINKEDIN</b></Badge>
+              <Badge borderRadius="full" px="4" colorScheme="purple">
+                <b>LINKEDIN</b>
+              </Badge>
+              <b>
+                <a
+                  href="https://www.linkedin.com/in/shubhamverma17/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  /shubhamverma17
+                </a>
+              </b>
             </Box>
 
-            <Box>
+            <Box
+              border={"0px solid red"}
+              display={"flex"}
+              flexDirection={"column"}
+              alignContent={"center"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
               <a
                 href="https://twitter.com/kannu_shubham17"
                 target="_blank"
@@ -103,18 +191,76 @@ const Footer = () => {
               >
                 <FaTwitter size={40} />
               </a>
-              <Badge borderRadius='full' px='4' colorScheme='purple'><b>TWITTER</b></Badge>
+              <Badge borderRadius="full" px="4" colorScheme="purple">
+                <b>TWITTER</b>
+              </Badge>
+              <b>
+                {" "}
+                <a
+                  href="https://twitter.com/kannu_shubham17"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  /kannu_shubham17
+                </a>
+              </b>
             </Box>
-          </VStack>
-          <Box>
-            <a target="_blank" rel="noreferrer">
-              <ImHome size={40} />
-            </a>
-            <Badge borderRadius='full' px='4' colorScheme='purple'><b>LOCATION</b></Badge>
+            {/* </Box> */}
+            {/* <Box className="footer__socials"> */}
+            <Box
+              border={"0px solid red"}
+              display={"flex"}
+              flexDirection={"column"}
+              alignContent={"center"}
+              justifyContent={"center"}
+              alignItems={"center"}
+            >
+              <a
+                style={{ border: "1 px solid red" }}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ImHome size={40} />
+              </a>
+              <Badge borderRadius="full" px="4" colorScheme="purple">
+                <b>LOCATION</b>
+              </Badge>
+              <a>
+                <b>Gwalior, M.P., India, 474001</b>
+              </a>
+            </Box>
           </Box>
-        </HStack>
-      </Container>
-    </footer>
+          {/* </HStack> */}
+        </Center>
+        <Badge
+          borderRadius="full"
+          px="8"
+          py="4"
+          colorScheme="purple"
+          className="footerBox"
+        >
+          <p className="footer">
+            <span
+              style={{
+                color: `red`,
+                background: `transparent`,
+                fontFamily: "cursive",
+              }}
+            >
+              Thank-you
+            </span>{" "}
+            <span>
+              <p>
+                Copyright © 2022 <b>Shubham Verma</b>{" "}
+              </p>
+            </span>
+            <Badge colorScheme="gray" borderRadius="full">
+              Made with ❤️
+            </Badge>
+          </p>
+        </Badge>
+      </footer>
+    </>
   );
 };
 

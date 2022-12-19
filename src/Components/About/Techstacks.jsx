@@ -2,8 +2,7 @@ import React from "react";
 import "./Techstacks.css";
 import { FaReact } from "react-icons/fa";
 import { GiSettingsKnobs } from "react-icons/gi";
-import { FaNode  } from "react-icons/fa";
- 
+import { FaNode } from "react-icons/fa";
 
 import {
   SiRedux,
@@ -14,18 +13,27 @@ import {
   SiPostman,
   SiHeroku,
   SiCodesandbox,
- 
 } from "react-icons/si";
-import { DiCss3, DiMongodb, DiVisualstudio, DiWindows, } from "react-icons/di";
+import { DiCss3, DiMongodb, DiVisualstudio, DiWindows } from "react-icons/di";
 import { SiJavascript } from "react-icons/si";
 import { VscGithub } from "react-icons/vsc";
 import { BsBootstrap, BsWordpress } from "react-icons/bs";
+import { Text } from "@chakra-ui/react";
 
 export const Techstacks = () => {
   return (
     <>
+      <br />
       <div className="section main" data-aos="fade-right">
-        <h2 className="section__title different">Skills</h2>
+        <Text
+          borderRadius={"20px"}
+          as="b"
+          fontSize={{ base: "18px", md: "24px", lg: "36px" }}
+          style={{ textShadow: "#FC0 1px 0 10px" }}
+          className="section__title_different"
+        >
+          ##TechStack
+        </Text>
         <div className="techsection">
           <div>
             <SiJavascript />
@@ -51,7 +59,7 @@ export const Techstacks = () => {
             <SiTypescript />
             <h5>Typescript</h5>
           </div>
-            <div>
+          <div>
             <DiVisualstudio />
             <h5>Visualstudio</h5>
           </div>
@@ -79,46 +87,33 @@ export const Techstacks = () => {
 
           <div>
             <DiMongodb />
-            <h5>
-              MongoDB
-            </h5>
+            <h5>MongoDB</h5>
           </div>
 
           <div>
             <SiExpress />
-            <h5>
-               Express
-            </h5>
+            <h5>Express</h5>
           </div>
 
           <div>
             <FaNode />
-            <h5>
-               NodeJs
-            </h5>
+            <h5>NodeJs</h5>
           </div>
 
           <div>
-            < SiPostman />
-            <h5>
-                Postman
-            </h5>
+            <SiPostman />
+            <h5>Postman</h5>
           </div>
 
           <div>
             <SiHeroku />
-            <h5>
-            Heroku
-            </h5>
+            <h5>Heroku</h5>
           </div>
 
           <div>
-            <SiCodesandbox/>
-            <h5>
-             SandBox
-            </h5>
+            <SiCodesandbox />
+            <h5>SandBox</h5>
           </div>
-
         </div>
       </div>
     </>

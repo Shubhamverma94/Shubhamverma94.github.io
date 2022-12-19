@@ -9,6 +9,7 @@ import Footer from "./Components/Footer/Footer";
 import { Projects } from "./Components/Projects/Project";
 import { About } from "./Components/About/About";
 import Github from "./Components/About/Github";
+import { Techstacks } from "./Components/About/Techstacks";
 
 
 
@@ -17,11 +18,13 @@ function App() {
     <div className="App" >
       <Navbar />
       <Home />
-      {/* <Name/> */}
+      <br/>
+     
       <Projects />
-      {/* <About /> */}
-      <Github/> 
-      <Skills />
+     
+      <Github /> 
+      <Techstacks/>
+      
       <Footer/>
    
     </div>

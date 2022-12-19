@@ -1,6 +1,7 @@
 import React from "react";
 import "./Projects.css";
 import { FaReact, FaHardHat } from "react-icons/fa";
+import { Text } from "@chakra-ui/react";
 import {
   SiBlockchaindotcom,
   SiHtml5,
@@ -27,8 +28,16 @@ export const Projects = () => {
   return (
     <>
       <div className="section">
-        <h2 className="section__title different">Projects</h2>
-        <p className="section__title different">recently worked on:-</p>
+        <Text
+          borderRadius={"20px"}
+          as="b"
+          fontSize={{ base: "18px", md: "24px", lg: "36px" }}
+          style={{ textShadow: "#FC0 1px 0 10px" }}
+          className="section__title_different"
+        >
+          ##Projects
+        </Text>
+        {/* <p className="section__title_different">recently worked on:-</p> */}
         <div className="allProjects">
           {/* 1st */}
 
