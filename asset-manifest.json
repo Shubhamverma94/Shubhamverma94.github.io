@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.4704bf7a.css",
-    "main.js": "/static/js/main.40ff00f9.js",
+    "main.js": "/static/js/main.386a0af6.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/self.png": "/static/media/self.df6ffda29a35ceba53e9.png",
     "static/media/Shubham_Verma_Resume.pdf": "/static/media/Shubham_Verma_Resume.4c67772c191088863797.pdf",
     "static/media/pen.gif": "/static/media/pen.d66be364fee4e927a7e6.gif",
     "index.html": "/index.html",
     "main.4704bf7a.css.map": "/static/css/main.4704bf7a.css.map",
-    "main.40ff00f9.js.map": "/static/js/main.40ff00f9.js.map",
+    "main.386a0af6.js.map": "/static/js/main.386a0af6.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4704bf7a.css",
-    "static/js/main.40ff00f9.js"
+    "static/js/main.386a0af6.js"
   ]
 }
