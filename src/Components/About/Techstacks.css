@@ -1,58 +1,106 @@
 .main {
-    margin-top: 4em;
+  margin: auto;
+  /* margin-top: 4em; */
+  /* background-color: yellow; */
+}
+.techsection {
+  width: 100%;
+  
+ align-items: center;
+ justify-content: center;
+  text-align: center;
+  background-color: var(--clr-bg);
+  height: 55rem;
+  /* height: 100%; */
+  padding: 8% 10% 0 10%;
+  margin: auto;
+  
+}
+
+.techsection > div {
+  /* width: 11%; */
+  width: 15%;
+  height: 16vh;
+  max-height: 140px;
+  box-shadow: var(--shadow);
+  z-index: 1;
+  border-radius: 20px;
+  margin: 2.5%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease 0s;
+  border: 2px solid var(--clr-primary);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 10px;
+}
+.techsection > div:hover {
+  background-color: var(--clr-bg);
+  overflow: hidden;
+  transform: scale(1.08);
+  box-shadow: rgba(0, 0, 0, 0.36) 0px 10px 36px 10px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border: 1px solid var(--clr-primary);
+  text-shadow: #FC0 1px 0 10px;
+  font-weight: bold;
+}
+
+.techsection > div > svg {
+  font-size: 8vh;
+  color: var(--clr-primary);
+}
+.techsection > div > h5 {
+  position: relative;
+  top: 8px;
+  background-color: transparent;
+}
+.techsection > div > h5:hover {
+ transform: scale(1.2);
+ font-weight: bold;
+}
+
+/* @media(max-width:360px){
+  .techsection{
+    height: 100rem;
+    border: 5px solid yellow;
   }
+} */
+
+@media (max-width: 600px) {
   .techsection {
-    width: 100%;
-    text-align: center;
-    background-color: var(--clr-bg);
-    height: 50vh;
-    
-  }
+    height: 80rem;
+    margin: auto;
   
+  }
+
   .techsection > div {
-    width: 11%;
-    height: 16vh;
-    max-height: 140px;
-    box-shadow: var(--shadow);
-    z-index: 1;
-    border-radius: 20px;
-    margin: 2.5%;
-    float: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.5s ease 0s;
-    border: 2px solid var(--clr-primary);
+    width: 40%;
+    margin-right: 20%;
+    /* margin: auto; */
+    margin-bottom: 2%;
+    /* height: 10vh; */
   }
-  .techsection > div:hover {
-    background-color: var(--clr-bg);
-    overflow: hidden;
-    transform: scale(1.08);
-    box-shadow: rgba(0, 0, 0, 0.36) 0px 10px 36px 0px,
-      rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    border: 1px solid var(--clr-primary);
+ 
+}
+@media (max-width: 810px) {
+  .techsection {
+    /* border: 5px solid yellow; */
+    height: 110rem;
+    padding-left: 15%;
+    /* padding-bottom: -50%; */
   }
-  
-  .techsection > div > svg {
+  .techsection > div {
+    width: 40%;
+    margin-right: 5%;
+    /* margin: auto; */
+    margin-bottom: 2%;
+    height: 18vh;
     
-    font-size: 8vh;
-    color: var(--clr-primary);
   }
-  .techsection > div > h5 {
-    position: relative;
-    top: 8px;
-    background-color: transparent;
-  }
-  
-  @media (max-width: 600px) {
-    .techsection {
-      height: 120vh;
-    }
-    .techsection > div {
-      width: 40%;
-      margin-right: 5%;
-      margin-bottom: 2%;
-      height: 18vh;
-    }
-  }
+}
+/* @media (max-width:1000px){
+  .techsection{
+    /* height: 40rem; */
+  /* }
+}  */

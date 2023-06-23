@@ -1,32 +1,25 @@
 import React from "react";
 import "./Projects.css";
-import { FaReact, FaHardHat } from "react-icons/fa";
-import { Text } from "@chakra-ui/react";
+import { Button, Text } from "@chakra-ui/react";
 import {
-  SiBlockchaindotcom,
   SiHtml5,
-  SiMaterialui,
-  SiChai,
-  SiEthereum,
-  SiExpress,
-  SiSocketdotio,
-  SiTailwindcss,
-  SiReactrouter,
   SiJavascript,
-  SiMongodb,
-  SiNodedotjs,
-  SiBootstrap,
-  SiChakraui,
   SiReact,
   SiRedux,
   SiFirebase,
+  SiCypress,
+  SiCucumber,
 } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
-import { VscJson } from "react-icons/vsc";
-import { IoLogoJavascript } from "react-icons/io";
+import { RiLiveFill } from "react-icons/ri";
+import { FaGithub } from "react-icons/fa";
+import lifestyle from "../Projects/lifestyle.png";
+
 export const Projects = () => {
   return (
-    <>
+    <div id="Projects">
+      <hr />
+      <br />
       <div className="section">
         <Text
           borderRadius={"20px"}
@@ -37,6 +30,8 @@ export const Projects = () => {
         >
           ##Projects
         </Text>
+        <br />
+        <br />
         {/* <p className="section__title_different">recently worked on:-</p> */}
         <div className="allProjects">
           {/* 1st */}
@@ -45,46 +40,41 @@ export const Projects = () => {
             <div className="project">
               <div className="project_videocontainer">
                 <div>
-                  <img
-                    src="https://i.ytimg.com/vi/a5RiQXOnqAM/maxresdefault.jpg"
-                    alt="sugar-cosmetics-Clone"
-                  />
+                  <img src={lifestyle} alt="Lifestyle Store - eCommerce" />
                 </div>
               </div>
               <div className="project_information">
-                <h2>“Sugar Cosmetics”.</h2>
+                <h2>“LifeStyle Store”.</h2>
                 <p>
-                  SUGAR Cosmetics is a cruelty-free makeup brand that is high on
-                  style and higher on performance. The brand is inspired by and
-                  targeted towards bold, independent women who refuse to be
-                  stereotyped into roles.
+                  Lifestyle is India's leading fashion destination for the
+                  latest trends. Lifestyle brings multiple categories including
+                  men, women and kids’ apparel, footwear, handbags, fashion
+                  accessories and beauty under the convenience of a single roof.
                 </p>
                 <div>
-                  <SiHtml5 />
-                  <DiCss3 />
+                  <SiCypress />
+                  <SiCucumber />
                   <SiJavascript />
-                  <SiReact />
-                  <SiRedux />
-                  <SiFirebase />
+                
                 </div>
                 <div>
                   <a
-                    href=" https://masai-cosmetics.netlify.app/"
+                    href="https://inspiring-empanada-77b05a.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <span type="button" className="btns onbt onbt">
-                      Deployed Link
-                    </span>
+                    <Button type="button" className="btns onbt onbt">
+                      View REPORT-- <RiLiveFill />
+                    </Button>
                   </a>
                   <a
-                    href="https://github.com/vivek13420/alluring-bottle-5827"
+                    href="https://github.com/Shubhamverma94/LifeStyle-Store/tree/main"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <span type="button" className="btns onbt">
-                      Github Code
-                    </span>
+                    <Button type="button" className="btns onbt">
+                      Source CODE-- <FaGithub />
+                    </Button>
                   </a>
                 </div>
               </div>
@@ -109,9 +99,8 @@ export const Projects = () => {
                   Cricbuzz is an Indian cricket news website owned by Times
                   Internet. It features, news, articles and live coverage of
                   cricket matches including videos, text commentary, player
-                  stats and team rankings. Their website also offers a mobile
-                  app. Cricbuzz is one of the most popular mobile apps for
-                  cricket news and scores in India.
+                  stats and team rankings.Cricbuzz is one of the most popular
+                  mobile apps for cricket news and scores in India.
                 </p>
                 <div>
                   <SiHtml5 />
@@ -124,18 +113,18 @@ export const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <span type="button" className="btns onbt onbt">
-                      Deployed Link
-                    </span>
+                    <Button type="button" className="btns onbt onbt">
+                      View LIVE-- <RiLiveFill />
+                    </Button>
                   </a>
                   <a
                     href="https://github.com/spvhantale/Cricbuzz_Clone"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <span type="button" className="btns onbt">
-                      Github Code
-                    </span>
+                    <Button type="button" className="btns onbt">
+                      Source CODE-- <FaGithub />
+                    </Button>
                   </a>
                 </div>
               </div>
@@ -159,7 +148,9 @@ export const Projects = () => {
                 <p>
                   Hassle free online fruit ordering platform in Mumbai, Kimaye
                   is a promise of consistently delivering the safest and
-                  superior quality fruits.
+                  superior quality fruits.India's finest fruits and veggies
+                  Handpicked at farms + Grown responsibly 100% Traceability by
+                  scanning a QR code.
                 </p>
                 <div>
                   <SiHtml5 />
@@ -172,18 +163,18 @@ export const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <span type="button" className="btns onbt onbt">
-                      Deployed Link
-                    </span>
+                    <Button type="button" className="btns onbt onbt">
+                      View LIVE-- <RiLiveFill />
+                    </Button>
                   </a>
                   <a
                     href="https://github.com/prayagp8/TEAM-ALPHA-KIMAYE"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <span type="button" className="btns onbt">
-                      Github Code
-                    </span>
+                    <Button type="button" className="btns onbt">
+                      Source CODE-- <FaGithub />
+                    </Button>
                   </a>
                 </div>
               </div>
@@ -205,9 +196,10 @@ export const Projects = () => {
               <div className="project_information">
                 <h2>“Apple TV+”.</h2>
                 <p>
-                  “Licious, owned by Delightful Gourmet Pvt Ltd., was founded in
-                  July 2015 by Abhay Hanjura and Vivek Gupta and officially
-                  launched in October of the same year.
+                  Streaming services, streamlined. Easily discover all your
+                  favorite shows. Enjoy all the top-rated prime-time TV shows,
+                  live sports, and news — from leading cable providers — on
+                  demand right on the Apple TV.
                 </p>
                 <div>
                   <SiHtml5 />
@@ -221,18 +213,18 @@ export const Projects = () => {
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <span type="button" className="btns onbt onbt">
-                      Deployed Link
-                    </span>
+                    <Button type="button" className="btns onbt onbt">
+                      View LIVE-- <RiLiveFill />
+                    </Button>
                   </a>
                   <a
                     href="https://github.com/Shubhamverma94/-vague-cream-5370"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    <span type="button" className="btns onbt">
-                      Github Code
-                    </span>
+                    <Button type="button" className="btns onbt">
+                      Source CODE-- <FaGithub />
+                    </Button>
                   </a>
                 </div>
               </div>
@@ -240,6 +232,6 @@ export const Projects = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };

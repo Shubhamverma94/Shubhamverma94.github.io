@@ -1,0 +1,15 @@
+.scroll-top {
+    position: fixed;
+    bottom: 2em;
+    right: 1em;
+    background-color: transparent;
+    font-size: 36px;
+  }
+  
+  @media (max-width: 900px) {
+    .scroll-top {
+      /* display: none; */
+      font-size: 26px;
+    }
+  }
+  

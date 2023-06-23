@@ -3,7 +3,7 @@ footer {
     padding: 3rem 0;
     text-align: center;
     font-size: 0.9rem;
-    margin-top: 7rem;
+    /* margin-top: 7rem; */
 }
 
 footer a {
@@ -15,9 +15,11 @@ footer a {
     font-weight: 500;
     margin-bottom: 2rem;
     display: inline-block;
+    display: flex;
+    align-items: center;
 }
 
-.permalinks {
+.permalinks,.permalinkss {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -25,14 +27,14 @@ footer a {
     margin: 0 auto 3rem;
 }
 
-.footer__socials {
+#footer__socials {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-bottom: 4rem;
 }
 
-.footer__socials a {
+#footer__socials a {
     background: var(--color-bg);
     color: var(--color-white);
     padding: 0.8rem;
@@ -41,7 +43,7 @@ footer a {
     border: 1px solid transparent;
 }
 
-.footer__socials a:hover {
+#footer__socials a:hover {
     background: transparent;
     color: var(--color-bg);
     border-color: var(--color-bg);
@@ -58,14 +60,16 @@ footer a {
         gap: 1.5rem;
     }
 
-    .footer__socials {
+    #footer__socials {
         margin-bottom: 2.6rem;
     }
-    .footerLast{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(auto);
-    }
+    /* .footerLast{
+        display: flex;
+        flex-direction: column;
+    } */
 }
 
-/*popup css*/
+/* .footerLast{
+    display: flex;
+    border: 1px solid green;
+} */

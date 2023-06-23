@@ -19,12 +19,15 @@ import { ImHome } from "react-icons/im";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import Name from "../Name/Name";
 import "./Footer.css";
+import ActiveIndicator from "../ActiveIndicator/ActiveIndicator";
+
 
 const Footer = () => {
+
   return (
-    <>
-      <br/>
-      <br/>
+    <div id="Contact">
+      <hr />
+      <br />
       <Text
         borderRadius={"20px"}
         as="b"
@@ -34,28 +37,30 @@ const Footer = () => {
       >
         ##Contact
       </Text>
-      <h2>Contact</h2>
+      {/* <h2>Contact</h2> */}
       <footer>
-        <a href="#home" className="footer__logo">
+        <a href="#home" className="footer__logo" >
+        <ActiveIndicator/>
           <Name />
+          <ActiveIndicator/>
         </a>
-        <ul className="permalinks">
+        {/* <ul className="permalinkss">
           <li>
-            <a href="#home">Home</a>
+            <a href="#Home">Home</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#About">About</a>
           </li>
           <li>
-            <a href="#experience">Skills</a>
+            <a href="#Skills">Skills</a>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#Projects">Projects</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
           </li>
-        </ul>
+        </ul> */}
 
         <Center className="footerLast">
           {/* <HStack
@@ -63,7 +68,7 @@ const Footer = () => {
           spacing={14}
           align="stretch"
         > */}
-          <Box className="footer__socials">
+          <Box id="footer__socials" className="permalinks">
             <Box
               border={"0px solid red"}
               display={"flex"}
@@ -236,11 +241,11 @@ const Footer = () => {
           borderRadius="full"
           px="8"
           py="4"
-          colorScheme="purple"
+          colorScheme="#ffeca2"
           className="footerBox"
         >
           <p className="footer">
-            <span
+            {/* <span
               style={{
                 color: `red`,
                 background: `transparent`,
@@ -248,19 +253,20 @@ const Footer = () => {
               }}
             >
               Thank-you
-            </span>{" "}
+            </span>{" "} */}
             <span>
               <p>
-                Copyright © 2022 <b>Shubham Verma</b>{" "}
+                Copyright © <b>Shubham Verma</b>
               </p>
             </span>
-            <Badge colorScheme="gray" borderRadius="full">
+            {/* <Badge colorScheme="gray" borderRadius="full">
               Made with ❤️
-            </Badge>
+            </Badge> */}
           </p>
         </Badge>
       </footer>
-    </>
+   
+    </div>
   );
 };
 

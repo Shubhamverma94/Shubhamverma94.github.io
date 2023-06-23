@@ -1,0 +1,125 @@
+/* body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #181818;
+} */
+.aboutIntro{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#pen{
+  width:50px;
+  /* display: inline-block; */
+  
+}
+
+.aboutIntro Button{
+  width: 50%;
+  margin: auto;
+ 
+}
+.Intromain {
+  display: flex;
+  justify-content: space-between;
+  padding: 10%;
+  gap: 10%;
+}
+/* .Intromain > div{
+  border: 1px solid red;
+} */
+.ImgPP img {
+  z-index: 2;
+  width: 92.5%;
+  border-radius: 20px;
+}
+/* .ImgPP:hover{
+  transform: scale(.9);
+  border-radius: 20%;
+} */
+
+.ImgPP {
+  z-index: 1;
+  width: 400px;
+  height: 400px;
+  /* box-shadow: 16px 14px 20px #0000008c; */
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ImgPP::before {
+  content: "hi";
+  background-image: conic-gradient(#ffeca2 20deg, transparent 120deg);
+  width: 150%;
+  height: 150%;
+  position: absolute;
+  animation: rotate 2s linear infinite;
+}
+.ImgPP::after {
+  content: "hello";
+  width: 190px;
+  height: 190px;
+  background-color: white;
+  position: absolute;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffeca2;
+  font-size: larger;
+  letter-spacing: 5px;
+  /* box-shadow: inset 20px 20px 20px #0000008c; */
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@media (max-width: 1000px){
+    .Intromain {
+        display: flex;
+      flex-direction: column;
+      gap: 20px;
+      }
+    .ImgPP {
+      
+        width: 250px;
+        height: 250px;
+        margin: auto;
+        
+      }
+} 
+@media (max-width: 600px){
+    .ImgPP {
+      margin: auto;
+        width: 200px;
+        height: 200px;
+        
+      }
+      .Intromain {
+        display: flex;
+      flex-direction: column;
+      
+      }
+} 
+/* @media (max-width: 600px){
+    .ImgPP {
+      
+        width: 100px;
+        height: 100px;
+        
+      }
+      .Intromain {
+        display: flex;
+      flex-direction: column;
+      
+      }
+}  */

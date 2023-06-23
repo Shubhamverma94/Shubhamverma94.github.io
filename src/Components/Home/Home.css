@@ -3,11 +3,15 @@
   align-content: center;
   display: flex;
   align-items: center;
+  padding: 10%;
 }
 @media only screen and (max-width: 800px) {
   #Box1 {
    display: flex;
    flex-direction: column-reverse; 
-   padding: 5%; 
+   padding: 10%; 
+}
+#tableGif{
+  width: 350px;
 }
 }

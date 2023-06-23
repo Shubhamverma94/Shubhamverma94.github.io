@@ -1,0 +1,23 @@
+#githubImg{
+    margin:20px 0;
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.6) 0px 2px 8px 0px;
+}
+#githubGraph{
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.6) 0px 2px 8px 0px;
+}
+@media(max-width:1100px){
+    #githubImg{
+        display: flex;
+        flex-direction: column;
+    }
+}
+#githubCalendar{
+   border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.6) 0px 2px 8px 0px;
+    padding: 5% 5% 0% 5%;
+}

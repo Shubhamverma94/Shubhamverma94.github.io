@@ -2,7 +2,15 @@
   width: 80%;
   margin: 0 auto;
   background-color: transparent;
+  
+  
 }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 
 .project {
   width: 100%;
@@ -12,10 +20,13 @@
   display: flex;
   border-radius: 20px;
   transition: all 0.5s ease 0s;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  
 }
 
 .project:hover {
   transform: scale(1.04);
+  text-shadow: #FC0 1px 0 10px;
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.36) 0px 10px 15px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
@@ -54,6 +65,8 @@
   margin-bottom: 10px;
 }
 .project_information > h2 {
+  font-size: larger;
+  font-weight: bolder;
   margin-top: 1em;
   color: var(--clr-primary);
 }
@@ -81,6 +94,7 @@
 .project_information > div:nth-child(4) {
   margin-top: 0.6em;
   display: flex;
+ 
 }
 .onbt {
   margin: 0 1vw 0 1vw;
@@ -93,15 +107,21 @@
   cursor: pointer;
   padding: 10px;
   margin-top: 10px;
+  box-shadow: rgba(191, 153, 221, 0.919) 0px 0px 0px 3px;
 }
 .btns:hover {
-  color: var(--clr-bg);
-  border: 2px solid var(--clr-primary);
-  background-color: var(--clr-primary);
+  content: "link";
+  transform: scale(1.2);
+  text-shadow: #FC0 1px 0 10px;
 }
-.project_information > h3 {
+
+.project_information > h2 {
   margin-top: 1.6em;
   color: var(--clr-primary);
+}
+.project_information > h2:hover {
+  text-shadow: #FC0 1px 0 10px;
+  transform: scale(1.2);
 }
 .project_information::-webkit-scrollbar {
   display: none;
@@ -122,6 +142,7 @@
     padding: 20px;
 }
 
+
 @media (max-width: 800px) {
   .project {
     flex-direction: column;
@@ -140,5 +161,19 @@
   .projects_container {
     width: 100%;
     margin: 0 auto;
+    
   }
 }
+@media(max-width:350px){
+  .Project{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .projects_container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+  

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Techstacks.css";
-import { FaReact } from "react-icons/fa";
+import { FaFileExcel, FaJava, FaJenkins, FaReact } from "react-icons/fa";
 import { GiSettingsKnobs } from "react-icons/gi";
 import { FaNode } from "react-icons/fa";
 
@@ -13,18 +13,27 @@ import {
   SiPostman,
   SiHeroku,
   SiCodesandbox,
+  SiNetlify,
+  SiSelenium,
+  SiCypress,
+  SiMysql,
+  SiPython,
+  SiCucumber,
+  SiMocha,
+  SiJira
 } from "react-icons/si";
-import { DiCss3, DiMongodb, DiVisualstudio, DiWindows } from "react-icons/di";
-import { SiJavascript } from "react-icons/si";
+import { DiCss3, DiEclipse, DiMongodb, DiVisualstudio, DiWindows } from "react-icons/di";
+import { SiJavascript ,SiFirebase} from "react-icons/si";
 import { VscGithub } from "react-icons/vsc";
-import { BsBootstrap, BsWordpress } from "react-icons/bs";
+import { BsBootstrap } from "react-icons/bs";
 import { Text } from "@chakra-ui/react";
 
 export const Techstacks = () => {
   return (
-    <>
+    <div id="Skills" >
+      <hr/>
       <br />
-      <div className="section main" data-aos="fade-right">
+      {/* <div className="main" data-aos="fade-right" > */}
         <Text
           borderRadius={"20px"}
           as="b"
@@ -35,10 +44,19 @@ export const Techstacks = () => {
           ##TechStack
         </Text>
         <div className="techsection">
-          <div>
+        <div>
+            <FaJava />
+            <h5>Java</h5>
+          </div>  
+        <div>
             <SiJavascript />
             <h5>Javascript</h5>
-          </div>
+        </div>
+        <div>
+            <SiPython/>
+            <h5>Python</h5>
+        </div>
+        
           <div>
             <SiHtml5 />
             <h5>HTML</h5>
@@ -48,16 +66,16 @@ export const Techstacks = () => {
             <h5>CSS</h5>
           </div>
           <div>
-            <FaReact />
-            <h5>React</h5>
+            <SiSelenium/>
+            <h5>Selenium</h5>
           </div>
           <div>
-            <SiRedux />
-            <h5>Redux</h5>
+            <SiCypress />
+            <h5>Cypress</h5>
           </div>
           <div>
-            <SiTypescript />
-            <h5>Typescript</h5>
+            <SiMysql />
+            <h5>MySql</h5>
           </div>
           <div>
             <DiVisualstudio />
@@ -67,18 +85,13 @@ export const Techstacks = () => {
             <GiSettingsKnobs />
             <h5>DSA</h5>
           </div>
-
-          <div>
-            <BsBootstrap />
-            <h5>Bootstrap</h5>
-          </div>
           <div>
             <DiWindows />
             <h5>Windows</h5>
           </div>
           <div>
-            <SiChakraui />
-            <h5>Chakra UI</h5>
+            <SiJira />
+            <h5>Jira</h5>
           </div>
           <div>
             <VscGithub />
@@ -86,18 +99,18 @@ export const Techstacks = () => {
           </div>
 
           <div>
-            <DiMongodb />
-            <h5>MongoDB</h5>
+            <FaJenkins />
+            <h5>Jenkins</h5>
           </div>
 
           <div>
-            <SiExpress />
-            <h5>Express</h5>
+            <DiEclipse />
+            <h5>Eclipse</h5>
           </div>
 
           <div>
-            <FaNode />
-            <h5>NodeJs</h5>
+            <FaFileExcel />
+            <h5>Excel</h5>
           </div>
 
           <div>
@@ -106,16 +119,20 @@ export const Techstacks = () => {
           </div>
 
           <div>
-            <SiHeroku />
-            <h5>Heroku</h5>
+            <SiCucumber />
+            <h5>BDD Cucumber</h5>
           </div>
 
           <div>
-            <SiCodesandbox />
-            <h5>SandBox</h5>
+            <SiNetlify />
+            <h5>Netlify</h5>
+          </div>
+          <div>
+            <SiMocha />
+            <h5>Mocha</h5>
           </div>
         </div>
-      </div>
-    </>
+      {/* </div> */}
+    </div>
   );
 };

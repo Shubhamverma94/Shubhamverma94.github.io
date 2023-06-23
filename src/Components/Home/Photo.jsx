@@ -1,8 +1,9 @@
-import { Avatar, Box, Flex, keyframes } from '@chakra-ui/react';
+import { Avatar, Box, Flex, keyframes } from "@chakra-ui/react";
+import { NavLink } from "react-bootstrap";
 
 export default function Photo() {
-  const size = '40px';
-  const color = 'pink.900';
+  const size = "40px";
+  const color = "#ffeca2";
 
   const pulseRing = keyframes`
 	0% {
@@ -19,11 +20,13 @@ export default function Photo() {
 
   return (
     <Flex
+      id="#About"
       justifyContent="center"
       alignItems="center"
       h="216px"
       w="full"
-      overflow="hidden">
+      overflow="hidden"
+    >
       {/* Ideally, only the box should be used. The <Flex /> is used to style the preview. */}
       <Box
         as="div"
@@ -32,23 +35,26 @@ export default function Photo() {
         h={size}
         _before={{
           content: "''",
-          position: 'relative',
-          display: 'block',
-          width: '300%',
-          height: '300%',
-          boxSizing: 'border-box',
-          marginLeft: '-100%',
-          marginTop: '-100%',
-          borderRadius: '50%',
+          position: "relative",
+          display: "block",
+          width: "300%",
+          height: "300%",
+          boxSizing: "border-box",
+          marginLeft: "-100%",
+          marginTop: "-100%",
+          borderRadius: "50%",
           bgColor: color,
           animation: `2.25s ${pulseRing} cubic-bezier(0.455, 0.03, 0.515, 0.955) -0.4s infinite`,
-        }}>
-        <Avatar
-          src="https://avatars.githubusercontent.com/u/103638279?s=96&v=4"
-          size="full"
-          position="absolute"
-          top={0}
-        />
+        }}
+      >
+        <NavLink href="#About">
+          <Avatar
+            src="https://avatars.githubusercontent.com/u/103638279?s=96&v=4"
+            size="full"
+            position="absolute"
+            top={0}
+          />
+        </NavLink>
       </Box>
       {/* <p align="center">
   <a href="https://github.com/DenverCoder1/readme-typing-svg">
