@@ -1,18 +1,11 @@
 import React from "react";
 import "./Techstacks.css";
-import { FaFileExcel, FaJava, FaJenkins, FaReact } from "react-icons/fa";
+import { FaFileExcel, FaJava, FaJenkins } from "react-icons/fa";
 import { GiSettingsKnobs } from "react-icons/gi";
-import { FaNode } from "react-icons/fa";
 
 import {
-  SiRedux,
   SiHtml5,
-  SiTypescript,
-  SiChakraui,
-  SiExpress,
   SiPostman,
-  SiHeroku,
-  SiCodesandbox,
   SiNetlify,
   SiSelenium,
   SiCypress,
@@ -23,10 +16,9 @@ import {
   SiJira,
   SiApachejmeter
 } from "react-icons/si";
-import { DiCss3, DiEclipse, DiMongodb, DiVisualstudio, DiWindows } from "react-icons/di";
-import { SiJavascript ,SiFirebase} from "react-icons/si";
+import { DiCss3, DiEclipse, DiVisualstudio, DiWindows } from "react-icons/di";
+import { SiJavascript } from "react-icons/si";
 import { VscGithub } from "react-icons/vsc";
-import { BsBootstrap } from "react-icons/bs";
 import { Text } from "@chakra-ui/react";
 
 export const Techstacks = () => {
