@@ -20,7 +20,8 @@ import {
   SiPython,
   SiCucumber,
   SiMocha,
-  SiJira
+  SiJira,
+  SiApachejmeter
 } from "react-icons/si";
 import { DiCss3, DiEclipse, DiMongodb, DiVisualstudio, DiWindows } from "react-icons/di";
 import { SiJavascript ,SiFirebase} from "react-icons/si";
@@ -86,8 +87,8 @@ export const Techstacks = () => {
             <h5>DSA</h5>
           </div>
           <div>
-            <DiWindows />
-            <h5>Windows</h5>
+            <SiApachejmeter />
+            <h5>Jmeter</h5>
           </div>
           <div>
             <SiJira />
