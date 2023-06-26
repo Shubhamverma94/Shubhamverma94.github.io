@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.d9192379.css",
-    "main.js": "/static/js/main.b8a48ba6.js",
+    "main.js": "/static/js/main.bc7bf679.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/lifestyle.png": "/static/media/lifestyle.365e825c1bcf34a41524.png",
     "static/media/Banjara.png": "/static/media/Banjara.32158177a088f462b9c8.png",
     "static/media/self.png": "/static/media/self.df6ffda29a35ceba53e9.png",
     "static/media/Shubham_Verma_Resume.pdf": "/static/media/Shubham_Verma_Resume.31f7fb6a0647c5accd45.pdf",
+    "static/media/GithubRA.png": "/static/media/GithubRA.d5316658b9bd1299e963.png",
     "static/media/KhanAcademy.jpg": "/static/media/KhanAcademy.7a18fd1a1c3b9d5955cf.jpg",
     "static/media/pen.gif": "/static/media/pen.d66be364fee4e927a7e6.gif",
     "index.html": "/index.html",
     "main.d9192379.css.map": "/static/css/main.d9192379.css.map",
-    "main.b8a48ba6.js.map": "/static/js/main.b8a48ba6.js.map",
+    "main.bc7bf679.js.map": "/static/js/main.bc7bf679.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d9192379.css",
-    "static/js/main.b8a48ba6.js"
+    "static/js/main.bc7bf679.js"
   ]
 }
